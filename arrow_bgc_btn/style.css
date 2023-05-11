@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: rgb(192, 208, 204);
+}
+
+
+#btn{
+    height: 9vh;
+    width: 15vw;
+    text-decoration: none;
+    border-radius: 25px;
+    font: 400 1.3vmax "gilroy";
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    align-items: center;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#arrow{
+    font-size: 4vmax;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.617);
+    margin-left: 0.6vmax;
+    background-color: transparent;
+    margin-bottom: 0.5vmax;
+}
+
+#btn::before{
+    content: "";
+    height: 9vh;
+    width: 15vw;
+    background-color: #01eb8e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: 0.5s ease-in-out all;
+}
+
+#btn:hover::before{
+    transform: translateX(0);
+}
+
+
+    

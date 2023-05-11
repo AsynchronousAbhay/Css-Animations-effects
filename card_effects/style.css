@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 31, 44);
+}
+
+.container{
+    width: 50vh;
+    height: 70vh;
+    border-radius: 0.6em;
+    background-image: url(jay-wennington-EHp92wvf3Vg-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+
+.content_wrapper
+{
+    /* outline: 2px solid red; */
+    background-color: rgba(0, 0, 0, 0.401);
+    padding: 1.5vmax;
+    transform: translateY(76%);
+    transition: 1s ease-in-out transform;
+}
+
+.container:hover .content_wrapper{
+    transform: translateY(0);
+}
+
+h1{
+    font: 500 2vmax "montserrat";
+    color: white;
+    margin-bottom: 1.3vmax;
+    position: relative;
+}
+
+h1::after{
+    content: "";
+    height: 0.2em;
+    width: 10.3em;
+    position: absolute;
+    left: -1.4vmax;
+    bottom: -0.5vmax;
+    background-color:  rgba(149, 247, 2, 0.859);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 1s ease-in-out 0.5s transform;
+}
+
+.container:hover h1::after{
+    transform: scaleX(1);
+}
+
+p{
+    font: 300 1vmax "montserrat";
+    color: white;
+    margin-bottom: 1.3vmax;
+}
+
+button{
+    padding: 1vmax 2vmax;
+    color: white;
+    background-color: rgba(149, 247, 2, 0.859);
+    border-radius: 0.5em;
+    border: none;
+}

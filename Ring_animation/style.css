@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.conatiner{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+}
+
+.ring{
+   width: 14vmax;
+   height: 14vmax;
+   border: 5px solid transparent;
+   position: absolute;
+   border-radius: 50%;
+ 
+}
+
+.ring_1{
+    animation: ring_1 1.5s linear 0.2s infinite both;
+    left: 37%;
+    border-top-color: rgb(245, 101, 221);
+}
+
+@keyframes ring_1 {
+    0%{
+        transform: rotate(0deg);
+        
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+.ring_2{
+    left: 43%;
+    top: 20%;
+    border-top-color: rgb(101, 243, 120);
+    animation: ring_2 1.7s linear 0.3s infinite both;
+}
+
+@keyframes ring_2 {
+    0%{
+        transform: rotate(0deg);
+        
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.ring_3{
+    left: 48%;
+    border-top-color: rgb(85, 85, 238);
+    animation: ring_3 1.9s linear 0.1s infinite both;
+}
+
+@keyframes ring_3 {
+    0%{
+        transform: rotate(0deg);
+        
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.ring_1::after{
+    content: "";
+    width: 1.2vmax;
+    height: 1.2vmax;
+    border-radius: 50%;
+    background-color: rgb(233, 13, 178);
+    position: absolute;
+    top: 11%;
+    left: 85%;
+    box-shadow: 0 0 10px rgb(15, 14, 15),
+    0 0 20px rgb(85, 75, 223),
+    0 0 22px rgb(6, 243, 18),
+    0 0 24px rgb(120, 219, 133),
+    0 0 26px rgb(204, 219, 120);
+    
+}
+
+.ring_2::after{
+    content: "";
+    width: 1.2vmax;
+    height: 1.2vmax;
+    border-radius: 50%;
+    background-color: rgb(57, 233, 13);
+    position: absolute;
+    top: 11%;
+    left: 85%;
+    box-shadow: 0 0 10px rgb(15, 14, 15),
+    0 0 20px rgb(85, 75, 223),
+    0 0 22px rgb(6, 243, 18),
+    0 0 24px rgb(120, 219, 133),
+    0 0 26px rgb(204, 219, 120);
+    
+}
+
+.ring_3::after{
+    content: "";
+    width: 1.2vmax;
+    height: 1.2vmax;
+    border-radius: 50%;
+    background-color: rgb(28, 13, 233);
+    position: absolute;
+    top: 11%;
+    left: 85%;
+    box-shadow: 0 0 10px rgb(15, 14, 15),
+    0 0 20px rgb(85, 75, 223),
+    0 0 22px rgb(6, 243, 18),
+    0 0 24px rgb(120, 219, 133),
+    0 0 26px rgb(204, 219, 120);
+    
+}
+
+p{
+    color: white;
+    position: absolute;
+    top: 80%;
+    font: 500 4vmax "open sans";
+}

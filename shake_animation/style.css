@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input:invalid{
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    25%{transform: translatex(4px);}    
+    50%{transform: translatex(-4px);}    
+    75%{transform: translatex(4px);}    
+}

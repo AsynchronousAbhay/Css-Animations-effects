@@ -1,0 +1,155 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+ 
+.box{
+    width: 5vmax;
+    height: 5vmax;
+    background-color:red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: move 5s linear 5s 5 both;
+}
+
+@keyframes move {
+    /* from{
+        top: 0%;
+        left: 0%;
+    }
+
+    to{
+        top: 20%;
+        left: 40%;
+    }
+     */
+
+     0%{
+        top: 0%;
+        left: 0%;
+     }
+     20%{
+        top: 15%;
+        left: 80%;
+     }
+     40%{
+        top: 30%;
+        left: 0%;
+     }
+     60%{
+        top: 45%;
+        left: 80%;
+     }
+     80%{
+        top: 60%;
+        left: 0%;
+     }
+     100%{
+        top: 75%;
+        left: 80%;
+     }
+}
+
+.box2{
+    width: 5vmax;
+    height: 5vmax;
+    background-color:blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: next 5s linear 4s 5 both;
+}
+
+@keyframes next {
+    /* from{
+        top: 0%;
+        left: 0%;
+    }
+
+    to{
+        top: 20%;
+        left: 40%;
+    }
+     */
+
+     0%{
+        top: 0%;
+        left: 0%;
+     }
+     20%{
+        top: 15%;
+        left: 80%;
+     }
+     40%{
+        top: 30%;
+        left: 0%;
+     }
+     60%{
+        top: 45%;
+        left: 80%;
+     }
+     80%{
+        top: 60%;
+        left: 0%;
+     }
+     100%{
+        top: 75%;
+        left: 80%;
+     }
+}
+
+.box3{
+    width: 5vmax;
+    height: 5vmax;
+    background-color:green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: start 5s linear 3s 5 both;
+}
+
+@keyframes start {
+    /* from{
+        top: 0%;
+        left: 0%;
+    }
+
+    to{
+        top: 20%;
+        left: 40%;
+    }
+     */
+
+     0%{
+        top: 0%;
+        left: 0%;
+     }
+     20%{
+        top: 15%;
+        left: 80%;
+     }
+     40%{
+        top: 30%;
+        left: 0%;
+     }
+     60%{
+        top: 45%;
+        left: 80%;
+     }
+     80%{
+        top: 60%;
+        left: 0%;
+     }
+     100%{
+        top: 75%;
+        left: 80%;
+     }
+}

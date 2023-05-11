@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    background-color: firebrick;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+#arrow_wrapper{
+    width: 8vmax;
+    height: 4vmax;
+    border: 2px solid white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grp_arrow
+{
+    color: white;
+    font-size: 2vmax;
+}
+
+#arrow{
+    font-size: 2.3vmax;
+}
+
+#line{
+    height: 0.2vmax;
+    width: 2vmax;
+    position: absolute;
+    left: 1.8vmax;
+    /* z-index: 1; */
+    background-color: white;
+    transform: scalex(1);
+    transform-origin: left;
+    transition: 1s linear all;
+}
+
+#arrow_wrapper:hover #line{
+    transform: scaleX(0);
+}
+
+
+
+

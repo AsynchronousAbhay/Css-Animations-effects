@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    height: 70px;
+    width: 120px;
+    background-color: rgb(117, 46, 46);
+    transition: 1s linear all;
+    position: relative;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: white;
+    padding: 5px;
+}
+.main::after{
+    content: "click";
+    height: 70px;
+    width: 120px;
+    color: white;
+    font: 500 1.7vmax "montserrat";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(11, 6, 6, 0.779);
+    top: 0;
+    left: 0;
+    transition: 1s linear all;
+    overflow-x: hidden;
+    transform: translateX(0);
+}
+.main:hover{
+      background-color:rgba(0, 0, 0, 0.559);
+}
+.main:hover::after{
+    /* width: 120px; */
+    transform: translateX(8.5vmax) ;
+}

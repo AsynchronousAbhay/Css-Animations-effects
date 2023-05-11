@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(19, 12, 31, 0.623);
+}
+
+.loader{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.281);
+    width: 50vmax;
+    height: 1.5vmax;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.575); 
+}
+
+.loader::after{
+    content: "";
+    width: 50vmax;
+    height: 1.5vmax;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg,
+    rgba(255, 0, 0, 0.61),
+    rgb(72, 72, 197),
+    rgb(39, 218, 15),
+    rgba(51, 3, 3, 0.418),
+    rgba(255, 255, 255, 0.486),
+    rgb(39, 218, 15),
+    rgba(255, 0, 0, 0.61),
+    rgb(72, 72, 197),
+    rgb(48, 2, 48),
+    rgb(248, 36, 36),
+    rgb(236, 156, 169),
+    rgb(217, 228, 70),
+    rgb(14, 226, 233),
+    rgba(235, 8, 167, 0.918),
+    rgb(39, 218, 15),
+    rgba(255, 0, 0, 0.61),
+    rgb(72, 72, 197),
+    rgb(217, 228, 70),
+    rgb(14, 226, 233),
+    rgba(235, 8, 167, 0.918)
+    );
+    filter: blur(5px);
+    animation: loader 15s linear 1s infinite reverse; 
+    background-size: 500%;
+}
+
+@keyframes loader {
+    0%{
+        background-position: 0,0;
+    }
+    100%{
+        background-position: 500%,0%;
+    }
+    
+}
+
+
+

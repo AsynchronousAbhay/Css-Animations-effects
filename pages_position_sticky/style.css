@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+.page_6{
+    width: 100vw;
+    min-height: 290vh;
+    background-color: black;
+    position: relative;
+}
+
+#txt_img_1_div{
+    min-height: 50vh;
+    width: 100vw;
+    background-color: blue;
+    background-image: url(page_6_img1.webp);
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 96;
+}
+
+#txt_img_1_div>h3{
+    font-family: Nuckle, sans-serif;
+    color: white;
+    font-size: 3vmax;
+    word-spacing:2px ;
+    font-weight: 600;
+    margin-top: 2vmax;
+    margin-left: 2vmax;
+}
+
+#txt_img_1_div header{
+    min-height: 12vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#txt_img_1_div header h1{
+    font-family: Nuckle, sans-serif;
+    color: white;
+    font-size: 2vmax;
+    word-spacing:2px ;
+    font-weight: 600;
+}
+#txt_img_1_div header h1>span{
+    font-family: Nuckle, sans-serif ;
+    color:#feffee;
+    font-weight: 300;
+    font-size: 1.6vmax;
+    word-spacing:1px ;
+    letter-spacing: 1.5px;
+}
+#txt_img_1_div header>span{
+    height: 2.5vmax;
+    width: 2.5vmax;
+    border-radius: 50%;
+    /* background-color: red; */
+    margin-left: 1vmax;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.4vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* txt_img_2_div */
+
+
+#txt_img_2_div{
+    min-height: 80vh;
+    width: 100vw;
+    background-color: blue;
+    background-image: url(page_6_img_2.webp);
+    position: sticky;
+    top: 10%;
+    bottom: 40%;
+    z-index: 97;
+}
+
+#txt_img_2_div>h3{
+    font-family: Nuckle, sans-serif;
+    color: white;
+    font-size: 3vmax;
+    word-spacing:2px ;
+    font-weight: 600;
+    margin-top: 2vmax;
+    margin-left: 2vmax;
+}
+
+#txt_img_2_div header{
+    min-height: 12vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#txt_img_2_div header h1{
+    font-family: Nuckle, sans-serif;
+    color: white;
+    font-size: 2vmax;
+    word-spacing:2px ;
+    font-weight: 600;
+}
+#txt_img_2_div header h1>span{
+    font-family: Nuckle, sans-serif ;
+    color:#feffee;
+    font-weight: 300;
+    font-size: 1.6vmax;
+    word-spacing:1px ;
+    letter-spacing: 1.5px;
+}
+#txt_img_2_div header>span{
+    height: 2.5vmax;
+    width: 2.5vmax;
+    border-radius: 50%;
+    /* background-color: red; */
+    margin-left: 1vmax;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.4vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* txt_img_3_div */
+
+
+#txt_img_3_div{
+    min-height: 80vh;
+    width: 100vw;
+    background-color: blue;
+    background-image: url(page_6_img3.webp);
+    background-position: center;
+    background-size: cover;
+    position: sticky;
+    top: 20%;
+    bottom: 40%;
+    z-index: 98;
+}
+
+#txt_img_3_div>h3{
+    font-family: Nuckle, sans-serif;
+    color: white;
+    font-size: 3vmax;
+    word-spacing:2px ;
+    font-weight: 600;
+    margin-top: 2vmax;
+    margin-left: 2vmax;
+}
+
+#txt_img_3_div header{
+    min-height: 12vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#txt_img_3_div header h1{
+    font-family: Nuckle, sans-serif;
+    color: white;
+    font-size: 2vmax;
+    word-spacing:2px ;
+    font-weight: 600;
+}
+#txt_img_3_div header h1>span{
+    font-family: Nuckle, sans-serif ;
+    color:#feffee;
+    font-weight: 300;
+    font-size: 1.6vmax;
+    word-spacing:1px ;
+    letter-spacing: 1.5px;
+}
+#txt_img_3_div header>span{
+    height: 2.5vmax;
+    width: 2.5vmax;
+    border-radius: 50%;
+    /* background-color: red; */
+    margin-left: 1vmax;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.4vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* txt_img_4_div */
+
+
+#txt_img_4_div{
+    min-height: 80vh;
+    width: 100vw;
+    background-color: blue;
+    background-image: url(page_6_img4.webp);
+    background-position: center;
+    background-size: cover;
+    position: sticky;
+    top: 40%;
+    bottom: 0%;
+    z-index: 99;
+}
+
+#txt_img_4_div>h3{
+    font-family: Nuckle, sans-serif;
+    color: white;
+    font-size: 3vmax;
+    word-spacing:2px ;
+    font-weight: 600;
+    margin-top: 2vmax;
+    margin-left: 2vmax;
+}
+
+#txt_img_4_div header{
+    min-height: 12vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#txt_img_4_div header h1{
+    font-family: Nuckle, sans-serif;
+    color: white;
+    font-size: 2vmax;
+    word-spacing:2px ;
+    font-weight: 600;
+}
+#txt_img_4_div header h1>span{
+    font-family: Nuckle, sans-serif ;
+    color:#feffee;
+    font-weight: 300;
+    font-size: 1.6vmax;
+    word-spacing:1px ;
+    letter-spacing: 1.5px;
+}
+#txt_img_4_div header>span{
+    height: 2.5vmax;
+    width: 2.5vmax;
+    border-radius: 50%;
+    /* background-color: red; */
+    margin-left: 1vmax;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.4vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    width: 5vmax;
+    height: 5vmax;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 1s ease all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.5vmax 0 0;
+}
+
+.line1{
+    position: absolute;
+    width: 0.1vmax;
+    height: 0.2vmax;
+    background-color: transparent;
+    position: relative;
+    transition: 0.8s ease 0.3s all;
+    transform-origin: left;
+    transform: translateX(0);
+}
+
+
+.line1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    /* right: 1.3vmax; */
+    width: 2.8vmax;
+    height: 0.2vmax;
+    background-color: black;
+    transition: 0.4s ease 0.2s all;
+    transform-origin: right;
+}
+
+.menu:hover .line1::after{
+    transform: scaleX(0);
+}
+
+.menu:hover .line1{
+    background-color: black;
+    width: 2.7vmax;
+    transform: translateX(45%);
+    /* transform: scale(1.1); */
+}
+
+.line2{
+    position: absolute;
+    width: 0.1vmax;
+    height: 0.2vmax;
+    margin-top: 0.6vmax;
+    background-color: transparent;
+    position: relative;
+    transition:  1.5s ease 0.4s all;
+    transform-origin: left;
+    transform: translateX(0);
+}
+
+
+
+.line2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 2.8vmax;
+    height: 0.2vmax;
+    background-color: black;
+    transition: 1s ease 0.2s all;
+    transform-origin: right;
+}
+
+.menu:hover .line2::after{
+    transform: scaleX(0);
+}
+
+.menu:hover .line2{
+    background-color: black;
+    width: 2.7vmax;
+    transform: translateX(45%);
+}
+
+.menu:hover{
+    transform: scale(1.1);
+}
+
